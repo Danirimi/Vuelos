@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package vuelos;
-
+import java.util.ArrayList;
 /**
  *
  * @author danir
@@ -14,4 +14,62 @@ public class RegistroVuelos {
     public String Origen;// lugar de donde sale el vuelo
     public String FSalida;//fecha de salida
     public String aereolinia;// aereolinia donde pertecence el vuelo
+
+    public RegistroVuelos(String destino, int Cpasajeros, String Origen, String FSalida, String aereolinia) {
+        this.destino = destino;
+        this.Cpasajeros = Cpasajeros;
+        this.Origen = Origen;
+        this.FSalida = FSalida;
+        this.aereolinia = aereolinia;
+    }
+
+    public String getDestino() {
+        return destino;
+    }
+
+    public void setDestino(String destino) {
+        this.destino = destino;
+    }
+
+    public int getCpasajeros() {
+        return Cpasajeros;
+    }
+
+    public void setCpasajeros(int Cpasajeros) {
+        this.Cpasajeros = Cpasajeros;
+    }
+
+    public String getOrigen() {
+        return Origen;
+    }
+
+    public void setOrigen(String Origen) {
+        this.Origen = Origen;
+    }
+
+    public String getFSalida() {
+        return FSalida;
+    }
+
+    public void setFSalida(String FSalida) {
+        this.FSalida = FSalida;
+    }
+
+    public String getAereolinia() {
+        return aereolinia;
+    }
+
+    public void setAereolinia(String aereolinia) {
+        this.aereolinia = aereolinia;
+    }
+
+    @Override
+    public String toString() {
+        return "RegistroVuelos{" + "destino=" + destino + ", Cpasajeros=" + Cpasajeros + ", Origen=" + Origen + ", FSalida=" + FSalida + ", aereolinia=" + aereolinia + '}';
+    }
+    
+  
+    
+    
+    
 }
