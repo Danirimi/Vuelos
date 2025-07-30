@@ -14,13 +14,23 @@ public class RegistroVuelos {
     public String Origen;// lugar de donde sale el vuelo
     public String FSalida;//fecha de salida
     public String aereolinia;// aereolinia donde pertecence el vuelo
+    public int Nvuelo;
 
-    public RegistroVuelos(String destino, int Cpasajeros, String Origen, String FSalida, String aereolinia) {
+    public RegistroVuelos(String destino, int Cpasajeros, String Origen, String FSalida, String aereolinia, int Nvuelo) {
         this.destino = destino;
         this.Cpasajeros = Cpasajeros;
         this.Origen = Origen;
         this.FSalida = FSalida;
         this.aereolinia = aereolinia;
+        this.Nvuelo = Nvuelo;
+    }
+
+    public int getNvuelo() {
+        return Nvuelo;
+    }
+
+    public void setNvuelo(int Nvuelo) {
+        this.Nvuelo = Nvuelo;
     }
 
     public String getDestino() {
@@ -65,7 +75,7 @@ public class RegistroVuelos {
 
     @Override
     public String toString() {
-        return "RegistroVuelos{" + "destino=" + destino + ", Cpasajeros=" + Cpasajeros + ", Origen=" + Origen + ", FSalida=" + FSalida + ", aereolinia=" + aereolinia + '}';
+        return "Vuelo: "+Nvuelo+", Destino: "+destino+", Max pasajeros: "+Cpasajeros+", Origen: "+Origen+", Fecha salida: "+FSalida+", Aereolinia: "+aereolinia;
     }
     
   
