@@ -12,6 +12,7 @@ public class Usuarios {
     public String UNombre;
     public String UCorreo;
     public int edad;
+    
 
     public Usuarios(String UNombre, String UCorreo, int edad) {
         this.UNombre = UNombre;
@@ -43,5 +44,5 @@ public class Usuarios {
         this.edad = edad;
     }
     
-    
+  
 }
