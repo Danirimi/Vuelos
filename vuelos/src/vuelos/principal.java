@@ -13,9 +13,9 @@ public class principal extends javax.swing.JFrame {
     ArrayList<RegistroVuelos> RVuelos = new ArrayList<>();
     ArrayList<Usuarios> RUsuarios = new ArrayList<>();
     ArrayList<String> ANombres = new ArrayList<>();
-    ArrayList<String> ACorreo = new ArrayList<>();
+    public static ArrayList<String> ACorreo = new ArrayList<>();
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(principal.class.getName());
-
+//hola
     /**
      * Creates new form principal
      */
@@ -425,7 +425,7 @@ public class principal extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         String VNombre = TNombre.getText();
-        String VCorreo = TCorreo.getText();
+        String VCorreo = TCorreo.getText().trim().toLowerCase();
         int VEdad = Integer.parseInt(TEdad.getText());
         vuelos.Usuarios usuario = new vuelos.Usuarios(VNombre, VCorreo, VEdad);
        
@@ -482,7 +482,7 @@ this.dispose();
 if (ACorreo.contains(correoIngresado)) {
     JReserva nuevaVentana = new JReserva();
     nuevaVentana.setVisible(true);
-    this.dispose();
+   
 } else {
     JOptionPane.showMessageDialog(null, "Correo incorrecto, intente de nuevo");
 }

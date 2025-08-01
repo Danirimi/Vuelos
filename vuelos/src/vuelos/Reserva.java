@@ -8,15 +8,16 @@ package vuelos;
  *
  * @author frank
  */
-public class Reserva extends Usuarios{
+public class Reserva{
     public String asiento;
     public int Nvuelo;
 
-    public Reserva(String asiento, int Nvuelo, String UNombre, String UCorreo, int edad) {
-        super(UNombre, UCorreo, edad);
+    public Reserva(String asiento, int Nvuelo) {
         this.asiento = asiento;
         this.Nvuelo = Nvuelo;
     }
+
+   
 
  
     public String getAsiento() {
@@ -35,34 +36,15 @@ public class Reserva extends Usuarios{
         this.Nvuelo = Nvuelo;
     }
 
-    public String getUNombre() {
-        return UNombre;
-    }
-
-    public void setUNombre(String UNombre) {
-        this.UNombre = UNombre;
-    }
-
-    public String getUCorreo() {
-        return UCorreo;
-    }
-
-    public void setUCorreo(String UCorreo) {
-        this.UCorreo = UCorreo;
-    }
-
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
     @Override
     public String toString() {
         return "Reserva{" + "asiento=" + asiento + ", Nvuelo=" + Nvuelo + '}';
     }
+
+ 
+    }
+
+  
     
     
-}
+
